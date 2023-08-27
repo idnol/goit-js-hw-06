@@ -10,6 +10,6 @@ const ingredients = [
 ingredients.forEach(item => {
   const el = document.createElement('li');
   el.textContent = item;
-  el.classList = 'item';
+  el.classList.add('item');
   document.querySelector('#ingredients').append(el)
 })
