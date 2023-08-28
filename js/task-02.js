@@ -6,10 +6,12 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-
+const arr = [];
 ingredients.forEach(item => {
   const el = document.createElement('li');
   el.textContent = item;
   el.classList.add('item');
-  document.querySelector('#ingredients').append(el)
+  arr.push(el.outerHTML)
 })
+
+document.querySelector('#ingredients').innerHTML = arr.join('');
